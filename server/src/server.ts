@@ -9,6 +9,6 @@ server.use(express.json());
 
 server.use(route);
 
-server.listen(4000, () => {
+server.listen(process.env.PORT || 4000, () => {
    console.log("server rodando")
 })
